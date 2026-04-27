@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+.eggs/
+
+# Env files
+.env
+.env.local
+.env.production
+
+# macOS
+.DS_Store
+
+# Cookies (never commit these)
+cookies.txt
