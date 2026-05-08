@@ -25,6 +25,7 @@ export default function Navbar() {
           <Link href="/blog" className="hover:text-pink-500 transition-colors">Blog</Link>
           <Link href="/about" className="hover:text-pink-500 transition-colors">About</Link>
           <Link href="/contact" className="hover:text-pink-500 transition-colors">Contact</Link>
+          <Link href="/disclaimer" className="hover:text-pink-500 transition-colors">Disclaimer</Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -35,11 +36,12 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full glass border-b border-white/10 p-6 flex flex-col gap-4 animate-in slide-in-from-top-4">
-          <Link href="/" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link href="/blog" onClick={() => setIsOpen(false)}>Blog</Link>
-          <Link href="/about" onClick={() => setIsOpen(false)}>About</Link>
-          <Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+        <div className="md:hidden absolute top-full left-0 w-full mt-2 rounded-3xl border border-white/10 bg-[#140a24] shadow-2xl z-50 p-6 flex flex-col gap-4 animate-in slide-in-from-top-4">
+          <Link href="/" className="hover:text-pink-500 transition-colors" onClick={() => setIsOpen(false)}>Home</Link>
+          <Link href="/blog" className="hover:text-pink-500 transition-colors" onClick={() => setIsOpen(false)}>Blog</Link>
+          <Link href="/about" className="hover:text-pink-500 transition-colors" onClick={() => setIsOpen(false)}>About</Link>
+          <Link href="/contact" className="hover:text-pink-500 transition-colors" onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link href="/disclaimer" className="hover:text-pink-500 transition-colors" onClick={() => setIsOpen(false)}>Disclaimer</Link>
         </div>
       )}
     </nav>
